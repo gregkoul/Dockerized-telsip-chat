@@ -7,13 +7,13 @@ This is a simple chatroom webapp using NodeJS along with express, ejs and socket
 ```bash
     -$ mkdir -p ~/MyProjects
     -$ cd ~/MyProjects
-    -$ git clone https://github.com/gregkoul/DC_telsip-chat.git
+    -$ git clone https://github.com/gregkoul/Dockerized-telsip-chat.git
                       OR via SSH
-    -$ git clone git@github.com:gregkoul/DC_telsip-chat.git
+    -$ git clone git@github.com:gregkoul/Dockerized-telsip-chat.git
 ```
 2. Now you have to build the Docker Image locally.
 ```bash
-    -$ cd ~/MyProjects/DC_telsip-chat
+    -$ cd ~/MyProjects/Dockerized-telsip-chat
     -$ docker build . -t telsip-chat:1.0
 ```
 3. Now you have to spin up your container.
