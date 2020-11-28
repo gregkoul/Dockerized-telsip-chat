@@ -16,8 +16,8 @@ This is a simple chatroom webapp using NodeJS along with express, ejs and socket
     -$ cd ~/MyProjects/Dockerized-telsip-chat
     -$ docker build . -t telsip-chat:1.0
 ```
-3. Now you have to spin up your container.
+3. Now you have to spin up your container in detached mode.
 
 ```bash
-    -$ docker run -p 4000:4000 --name=chat -e PROTOCOL=http -e HOST=your.domain.gr -e PORT=4000 telsip-chat:1.0
+    -$ docker run -p 4000:4000 -d --name=chat -e PROTOCOL=http -e HOST=your.domain.gr -e PORT=4000 telsip-chat:1.0
 ```
