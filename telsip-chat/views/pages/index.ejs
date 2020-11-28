@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>IoT TelSiP @ UniWA - A simple chatroom webapp with WebSockets</title>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script> -->
+        <script src="/socket.io.js"></script>
+        <link href="/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <div id="websockets-chat">
+            <h2>TelSiP Chatroom</h3>
+            <h3>A simple expressjs chatroom webapp with WebSockets</h3>
+            <div id="chat-window">
+                <div id="output"></div>
+                <div id="feedback"></div>
+            </div>
+            <input id="user" type="text" placeholder="User" />
+            <input id="message" type="text" placeholder="Message" />
+            <button id="send">Send</button>
+            <h4>Copyright @ 2020 --- <a href="http://telsip.uniwa.gr">TelSiP</a> @ <a href="http://uniwa.gr">UniWA</a></h4>
+            <h4>Created by <a href="http://users.uniwa.gr/gregkoul/">Grigorios Koulouras</a></h4>
+        </div>
+
+    </body>
+    <script type="text/javascript">
+        var socket = io.connect('<%= srvurl %>');
+    </script>
+    <script src="/chat.js"></script>
+</html>
